@@ -1,0 +1,15 @@
+<resources>
+	<string name="app_name">ChatRoomApp</string>
+	<string name="chat_room_app">Chat Room App</string>
+	
+	<string name="login_fragment_choice_text">Choose your preferred method of authetification</string>
+	<string name="add_new_room">Add New Room</string>
+	<string name="name_for_the_new_room">Name for the new room</string>
+	<string name="enter_message">Enter message</string>
+	<string name="seperator">|</string>
+	
+	<string name="ok">Ok</string>
+	
+	<string name="facebook_application_id" translatable="false">339176656760246</string>
+	
+</resources>

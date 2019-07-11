@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "204988271066",
+    "firebase_url": "https://houseofcodechat.firebaseio.com",
+    "project_id": "houseofcodechat",
+    "storage_bucket": "houseofcodechat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204988271066:android:e949f3f81087209f",
+        "android_client_info": {
+          "package_name": "dk.casperhedegaard.chatroomapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "204988271066-0kd4resua2a0iqhe5kcpvmj2gsed4tqr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "dk.casperhedegaard.chatroomapp",
+            "certificate_hash": "618c122885f8054eeedb4f368666c8bb64420c05"
+          }
+        },
+        {
+          "client_id": "204988271066-ccu8k3giffcvr83hto0q3ub6tek2tuo8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfjgwiiVbPr-2gGs9AOYCjB8UJCkwzdnE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "204988271066-ccu8k3giffcvr83hto0q3ub6tek2tuo8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
