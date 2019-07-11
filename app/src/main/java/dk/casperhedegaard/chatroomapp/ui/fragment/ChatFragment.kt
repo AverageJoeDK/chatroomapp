@@ -187,7 +187,8 @@ class ChatFragment : ExtendFragment() {
                 uriToImage = CropImage.getPickImageResultUri(requireContext(), data)
                 val msg = fragment_chat_new_message_text.text.toString()
                 MessageController.saveMessage(vm.room!!.id, msg, vm.currentUserId, uriToImage) { success, error ->
-                    // TODO add error handling
+                    vm.appStatusMessage = "Failed to save message. Try again."
+                    vm.appStatus.postValue(Globals.APP_STATUS_TOAST_ERROR)
                 }
             }
         }

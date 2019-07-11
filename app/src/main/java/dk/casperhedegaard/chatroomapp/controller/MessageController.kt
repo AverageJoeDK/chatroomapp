@@ -45,7 +45,7 @@ object MessageController {
 
     private fun uploadMessage(data: Map<String, Any>, ref: DocumentReference, completion:(success: Boolean, error: String?) -> Unit) {
         ref.set(data).addOnCompleteListener { task ->
-            completion(task.isSuccessful, task.exception?.toString())
+            completion(task.isSuccessful, if(task.isSuccessful) null else "Failed to upload your message. Please try again.")
         }
     }
 
