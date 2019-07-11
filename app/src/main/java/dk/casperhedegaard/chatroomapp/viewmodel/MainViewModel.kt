@@ -47,8 +47,8 @@ class MainViewModel(app: Application) : AndroidViewModel(app) {
         }
     }
 
-    fun addRoom(name: String, completion:(success: Boolean) -> Unit) {
-        RoomController.addRoom(name) {
+    fun addRoom(name: String, description: String, completion:(success: Boolean) -> Unit) {
+        RoomController.addRoom(name, description) {
             completion(it)
         }
     }

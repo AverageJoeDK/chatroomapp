@@ -11,5 +11,6 @@
 	<string name="ok">Ok</string>
 	
 	<string name="facebook_application_id" translatable="false">339176656760246</string>
-	
+	<string name="description_for_the_new_room">Description for the new room</string>
+
 </resources>

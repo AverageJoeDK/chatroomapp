@@ -35,9 +35,10 @@ object RoomController {
         }
     }
 
-    fun addRoom(name: String, completion:(success: Boolean) -> Unit) {
+    fun addRoom(name: String, description: String, completion:(success: Boolean) -> Unit) {
         val data = mutableMapOf<String, Any>()
         data["name"] = name
+        data["description"] = description
         mdb.collection(Globals.FIREBASE_ROOM_COLLECTION).add(data).addOnCompleteListener {
             completion(it.isSuccessful)
         }

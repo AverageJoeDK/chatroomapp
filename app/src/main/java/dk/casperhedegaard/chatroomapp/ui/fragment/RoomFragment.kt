@@ -15,6 +15,7 @@ import dk.casperhedegaard.chatroomapp.R
 import dk.casperhedegaard.chatroomapp.controller.RoomController
 import dk.casperhedegaard.chatroomapp.ui.adapter.RoomRecyclerAdapter
 import dk.casperhedegaard.chatroomapp.util.FirebaseUtils
+import dk.casperhedegaard.chatroomapp.util.Globals
 import dk.casperhedegaard.chatroomapp.viewmodel.MainViewModel
 import kotlinx.android.synthetic.main.fragment_room.*
 import kotlinx.android.synthetic.main.new_room_dialog.view.*
@@ -60,10 +61,21 @@ class RoomFragment : ExtendFragment() {
             }
             dialogBuilder.setPositiveButton("Add") { d, _ ->
                 val newName = dialogView.dialog_new_room_name.text.toString()
-                vm.addRoom(newName) {
-                    vm.loadRooms {
-                        updateRoomList()
-                        d.dismiss()
+                val newDescription = dialogView.dialog_new_room_description.text.toString()
+                if(newName.isBlank() || newDescription.isBlank()) {
+                    vm.appStatusMessage = "Please fill out the dialog."
+                    vm.appStatus.postValue(Globals.APP_STATUS_TOAST_ERROR)
+                } else {
+                    vm.addRoom(newName, newDescription) {
+                        if (it) {
+                            vm.loadRooms {
+                                updateRoomList()
+                                d.dismiss()
+                            }
+                        } else {
+                            vm.appStatusMessage = "Failed to add your room. Please try again."
+                            vm.appStatus.postValue(Globals.APP_STATUS_TOAST_ERROR)
+                        }
                     }
                 }
             }
