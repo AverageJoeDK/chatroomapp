@@ -10,9 +10,6 @@ import dk.casperhedegaard.chatroomapp.controller.RoomController
 import dk.casperhedegaard.chatroomapp.model.Message
 import dk.casperhedegaard.chatroomapp.model.Room
 import dk.casperhedegaard.chatroomapp.util.Globals
-import timber.log.Timber
-import java.util.*
-import kotlin.collections.ArrayList
 
 class MainViewModel(app: Application) : AndroidViewModel(app) {
 

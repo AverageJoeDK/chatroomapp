@@ -2,25 +2,19 @@ package dk.casperhedegaard.chatroomapp.ui.fragment
 
 
 import android.app.AlertDialog
-import android.content.DialogInterface
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
-
 import dk.casperhedegaard.chatroomapp.R
-import dk.casperhedegaard.chatroomapp.controller.RoomController
 import dk.casperhedegaard.chatroomapp.ui.adapter.RoomRecyclerAdapter
 import dk.casperhedegaard.chatroomapp.util.FirebaseUtils
 import dk.casperhedegaard.chatroomapp.util.Globals
 import dk.casperhedegaard.chatroomapp.viewmodel.MainViewModel
 import kotlinx.android.synthetic.main.fragment_room.*
 import kotlinx.android.synthetic.main.new_room_dialog.view.*
-import timber.log.Timber
-import java.util.*
 
 class RoomFragment : ExtendFragment() {
 

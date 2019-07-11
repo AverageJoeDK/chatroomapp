@@ -9,8 +9,6 @@ import dk.casperhedegaard.chatroomapp.model.Room
 import dk.casperhedegaard.chatroomapp.util.DispatchGroup
 import dk.casperhedegaard.chatroomapp.util.FirebaseUtils
 import dk.casperhedegaard.chatroomapp.util.Globals
-import timber.log.Timber
-import java.util.*
 import kotlin.collections.ArrayList
 
 object RoomController {

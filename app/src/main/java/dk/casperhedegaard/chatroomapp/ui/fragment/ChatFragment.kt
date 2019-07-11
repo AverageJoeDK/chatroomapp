@@ -6,7 +6,6 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -18,7 +17,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.ListUpdateCallback
 import androidx.recyclerview.widget.RecyclerView
 import com.theartofdev.edmodo.cropper.CropImage
-
 import dk.casperhedegaard.chatroomapp.R
 import dk.casperhedegaard.chatroomapp.controller.MessageController
 import dk.casperhedegaard.chatroomapp.databinding.FragmentChatBinding
@@ -26,12 +24,9 @@ import dk.casperhedegaard.chatroomapp.ui.adapter.ChatRecyclerAdapter
 import dk.casperhedegaard.chatroomapp.util.Globals
 import dk.casperhedegaard.chatroomapp.util.UtilFunctions
 import dk.casperhedegaard.chatroomapp.viewmodel.MainViewModel
-import dk.casperhedegaard.firebasechat.model.MessageDiffCallback
+import dk.casperhedegaard.chatroomapp.model.MessageDiffCallback
 import kotlinx.android.synthetic.main.fragment_chat.*
 import kotlinx.android.synthetic.main.fragment_chat.view.*
-import timber.log.Timber
-import java.util.*
-import kotlin.collections.ArrayList
 
 class ChatFragment : ExtendFragment() {
 

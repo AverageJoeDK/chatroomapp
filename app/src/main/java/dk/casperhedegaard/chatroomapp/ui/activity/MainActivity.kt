@@ -1,12 +1,11 @@
 package dk.casperhedegaard.chatroomapp.ui.activity
 
 import android.content.DialogInterface
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
 import com.google.firebase.auth.FirebaseAuth
 import dk.casperhedegaard.chatroomapp.BuildConfig

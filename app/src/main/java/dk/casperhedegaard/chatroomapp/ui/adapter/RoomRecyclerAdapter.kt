@@ -8,7 +8,6 @@ import dk.casperhedegaard.chatroomapp.R
 import dk.casperhedegaard.chatroomapp.databinding.RoomListItemBinding
 import dk.casperhedegaard.chatroomapp.model.Room
 import dk.casperhedegaard.chatroomapp.viewmodel.MainViewModel
-import timber.log.Timber
 
 class RoomRecyclerAdapter(var roomList: ArrayList<Room>, val vm: MainViewModel) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 

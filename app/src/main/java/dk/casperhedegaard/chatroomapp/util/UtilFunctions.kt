@@ -1,24 +1,13 @@
 package dk.casperhedegaard.chatroomapp.util
 
 import android.app.Activity
-import android.content.Context
-import android.graphics.Bitmap
-import android.graphics.Matrix
 import android.graphics.Outline
-import android.graphics.PorterDuff
-import android.media.ExifInterface
 import android.net.Uri
-import android.provider.MediaStore
 import android.text.format.DateUtils
 import android.view.View
 import android.view.ViewOutlineProvider
-import com.google.firebase.Timestamp
-import org.json.JSONObject
-import timber.log.Timber
-import java.io.IOException
-import java.net.URL
 import android.view.inputmethod.InputMethodManager
-import okhttp3.*
+import com.google.firebase.Timestamp
 
 
 object UtilFunctions {

@@ -1,7 +1,6 @@
-package dk.casperhedegaard.firebasechat.model
+package dk.casperhedegaard.chatroomapp.model
 
 import androidx.recyclerview.widget.DiffUtil
-import dk.casperhedegaard.chatroomapp.model.Message
 
 class MessageDiffCallback(val oldList: List<Message>, val newList: List<Message>) : DiffUtil.Callback() {
 

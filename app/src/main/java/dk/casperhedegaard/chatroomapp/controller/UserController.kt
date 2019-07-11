@@ -2,7 +2,6 @@ package dk.casperhedegaard.chatroomapp.controller
 
 import dk.casperhedegaard.chatroomapp.util.FirebaseUtils
 import dk.casperhedegaard.chatroomapp.util.Globals
-import timber.log.Timber
 
 object UserController {
 
